@@ -2,21 +2,23 @@
 //
 
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
 int main()
 {
-    string dogName1 = "Kiana";
-    string dogName2 = "Kaiser";
-    string dogBreed1 = "Weimaraner";
-    string dogBreed2 = "Chihuahua";
-    int dogAge1 = 9;
-    int dogAge2 = 13; 
+	double num1, num2;
 
-    cout << "I have two dogs.\n";
-    cout << "The " << dogBreed1 << " is " << dogAge1 << " years old and her name is " << dogName1 << ".\n";
-    cout << dogName2 << " is a " << dogBreed2 << " and he is " << dogAge2 << " years old.\n";
+	cout << "Enter first numer: ";
+	cin >> num1;
+
+	cout << "Enter second numer: ";
+	cin >> num2;
+
+	cout << num1 + num2;
+
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
