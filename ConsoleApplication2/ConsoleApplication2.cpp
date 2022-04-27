@@ -8,15 +8,19 @@ using namespace std;
 
 int main()
 {
-	double num1, num2;
+	int secretNum = 14;
+	int guess;
 
-	cout << "Enter first numer: ";
-	cin >> num1;
+	do{
+		cout << "Enter your guess: " << endl;
+		cin >> guess;
+		if (guess == secretNum) {
+			cout << "You Win!";
+		} else {
+			cout << "Not the number, try again" << endl;
+		}
+	} while (secretNum != guess);
 
-	cout << "Enter second numer: ";
-	cin >> num2;
-
-	cout << num1 + num2;
 
 	return 0;
 }
